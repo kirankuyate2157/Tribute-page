@@ -32,9 +32,9 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <Songs />
-                <Photos />
-                <Biography />
+                <Songs id="songs" />
+                <Photos id="photos" />
+                <Biography id="biography" />
             </div>
 
         </>

@@ -3,13 +3,13 @@ import React from 'react'
 const Details = (props) => {
 
     return (
-        <><div className="w-4/5  mt-8 text-gray-300 p-10 flex flex-row">
+        <><div className="md:w-4/5  mt-8 text-gray-300 md:p-10 p-2 flex flex-row">
 
-            <div className=" w-8/12  md:px-8  8pr-">
-                <h1 className="font-bold text-3xl md:text-6xl drop-shadow-2xl  mb-10 text-red-800 ">{props.title}</h1>
+            <div className=" w-9/12  md:px-8 md:  pl-5 md:pr-8">
+                <h1 className="font-bold text-3xl md:text-6xl drop-shadow-2xl  md:mb-10 text-red-800 ">{props.title}</h1>
 
                 {props.para.map(p => (
-                    <p className='flex justify-start mt-6  pr-12 text-xl'>
+                    <p className='flex justify-start mt-6  md:pr-12 text-sm  sm:text-xl'>
                         {p}
                     </p>
                 ))
@@ -18,16 +18,14 @@ const Details = (props) => {
 
             </div>
             <aside
-
-
                 style={{ height: "fit-content" }}
-                className="hidden md:flex md:w-4/12 sticky  mx-5 top-2 bg-red-700  shadow-xl flex flex-col gap-4"
+                className=" md:w-4/12 w-1/3 sticky md:mx-5 top-2 mt-96 md:mx-5  bg-red-700  shadow-xl flex flex-col md:gap-4"
             >
 
 
                 <img src={props.image}
                     alt="Argit singh"
-                    className='ml-6 mb-6 ' />
+                    className='  ml-2 mb-2 sticky md:ml-6 md:mb-6 ' />
 
             </aside >
 

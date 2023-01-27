@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+
 import Details from './Details';
 
 
@@ -170,7 +172,7 @@ const Biography = () => {
 
     return <>
         <>
-            <div className=" flex flex-row  justify-between bg-gray-900">
+            <div className=" flex md:flex-row flex-col justify-between bg-gray-900">
                 <aside
 
 
@@ -179,7 +181,7 @@ const Biography = () => {
                 >
                     <div className="flex  flex-row w-full  max-h-screen  text-white pt-3 pl-5   pb-2">
                         <ol className=" flex flex-col w-full pl-5 font-semibold  text-sm justify-between ">
-                            <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white my-3 p-3 rounded-l-xl text-xl" onClick={() => setPage(Pages[0])} >Early Life</li>
+                            <li className="  w-full pl-5 hover:bg-gray-900  text-gray-900 hover:text-white my-3 p-3 rounded-l-xl text-xl" onClick={() => setPage(Pages[0])} >Early Life</li>
                             <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white my-3 p-3 rounded-l-xl text-xl" onClick={() => setPage(Pages[1])} >Career</li>
                             <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white my-3 p-3 rounded-l-xl text-xl" onClick={() => setPage(Pages[2])} >Musical Style</li>
                             <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white my-3 p-3 rounded-l-xl text-xl" onClick={() => setPage(Pages[3])} >Personal Life</li>
@@ -191,6 +193,22 @@ const Biography = () => {
                         </ol>
                     </div>
                 </aside>
+
+                <ScrollMenu className="md:hidden" >
+                    <div className="md:hidden  bg-red-700 sticky">
+                        <ol className=" flex  w-full pl-5 font-semibold  text-md  md:justify-between ">
+                            <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white  p-3 rounded-xl text-xl" onClick={() => setPage(Pages[0])} >Early Life</li>
+                            <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white  p-3 rounded-xl text-xl" onClick={() => setPage(Pages[1])} >Career</li>
+                            <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white  p-3 rounded-xl text-xl" onClick={() => setPage(Pages[2])} >Musical Style</li>
+                            <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white  p-3 rounded-xl text-xl" onClick={() => setPage(Pages[3])} >Personal Life</li>
+                            <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white  p-3 rounded-xl text-xl" onClick={() => setPage(Pages[4])} >New Worth</li>
+                            <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white  p-3 rounded-xl text-xl" onClick={() => setPage(Pages[5])} >Controversy</li>
+                            <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white  p-3 rounded-xl text-xl" onClick={() => setPage(Pages[6])} >Awards</li>
+                            <li className="  w-full pl-5 hover:bg-gray-900 text-gray-900 hover:text-white  p-3 rounded-xl text-xl" onClick={() => setPage(Pages[7])} >Facts</li>
+
+                        </ol>
+                    </div>
+                </ScrollMenu>
 
                 <Details {...page} />
             </div>
