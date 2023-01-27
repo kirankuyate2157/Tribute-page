@@ -3,6 +3,7 @@ import Songs from "./Songs"
 import Navbar from './Navbar'
 import Photos from "./Photos"
 import Biography from "./Biography"
+import Footer from './Footer'
 
 const Hero = () => {
     // https://lh3.googleusercontent.com/W_yOqnKSDYyeVOY_AsXhuAtb6rW3vCL3GtJ9DA1GxWOrJfyeSOqzvTv_TkFHijdkVPXWutASBlRFPg=w2456-h1023-p-l90-rj
@@ -35,6 +36,7 @@ const Hero = () => {
                 <Songs id="songs" />
                 <Photos id="photos" />
                 <Biography id="biography" />
+                <Footer />
             </div>
 
         </>

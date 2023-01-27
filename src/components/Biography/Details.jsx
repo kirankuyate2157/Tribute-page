@@ -3,7 +3,7 @@ import React from 'react'
 const Details = (props) => {
 
     return (
-        <><div className="md:w-4/5  mt-8 text-gray-300 md:p-10 p-2 flex flex-row">
+        <><div className="md:w-4/5  my-8 text-gray-300 md:p-10 p-2 flex flex-row">
 
             <div className=" w-9/12  md:px-8 md:  pl-5 md:pr-8">
                 <h1 className="font-bold text-3xl md:text-6xl drop-shadow-2xl  md:mb-10 text-red-800 ">{props.title}</h1>
