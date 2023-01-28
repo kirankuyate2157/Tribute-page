@@ -1,15 +1,15 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/Footer";
 import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/b" element={<Footer />} />
+        <Route path="/n" element={<Navbar />} />
       </Routes>
     </>
   );
